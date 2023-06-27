@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<hmtl lang="pt-br">
+
+    <head>
+
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="#">
+        <title>Formularios</title>
+
+    </head>
+
+    <body>
+
+        <h1>Trabalhando com tags para Formularios</h1>
+        <hr>
+        <p>Elementos para Formularios são voltados á interação com o usuario.
+            Entrada de dados, seleção de opções, processamento para
+            manipulação de dados entre outros.
+        </p>
+
+        <p>Formularios mp HTML são somente uma <b>Interfaçe</b>.</p>
+        <p>Para que o formulario funcione, é necessarop combiná-lo
+            com uma <b>Linguagem de progamação</b>
+        </p>
+
+        <h2>Exemplos</h2>
+
+        <form action="#" method="post">
+            <p>
+                <label>Nome:</label>
+                <input required type="text" id="nome" name="Txtnome" placeholder="Nome completo">
+                <!--placeholder gera uma legenda dentro da input--> <!--maxlength"10" determina a quantidade-->
+            </p>
+
+            <p>
+                <label for="email">E-mail</label>
+                <input required type="email" id="email" name="email">
+
+            </p>
+            <!--Não tem o required, pois não é obrigatorio o prenchimento-->
+            <p>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone">
+
+            </p>
+
+            <p>Voce está Trabalhando?</p>
+
+            <p>
+                <!--Cuidado ao usar o Radio, pois ele precisa estar com o mesmo name em todas opções-->
+                <input type="radio" id="sim" name="trabalha" value="SIM">
+                <label for="sim">SIM</label>
+                <input type="radio" id="não" name="trabalha" value="NÂO">
+                <label for="não">NÂO</label>
+
+
+            </p>
+
+            <p>Interesses</p>
+
+            <p>
+                <input type="checkbox" id="html5" name="interesses">
+                <label for="html5">HTML5</label>
+                <input type="checkbox" id="css3" name="interesses">
+                <label for="css3">CSS3</label>
+                <input type="checkbox" id="javascript" name="interesses">
+                <label for="javascript">javascript</label>
+
+            </p>
+
+            <p>
+
+                <label for="nascimento">Nascimento</label>
+                <input type="date" name="nascimento" id="nascimento">
+
+            </p>
+
+            <p>
+
+                <label for="cor">Qual sua cor favorita?</label>
+                <input type="color" id="cor" name="cor">
+
+            </p>
+
+            <p>
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade">
+
+            </p>
+
+            <P>
+
+                <label for="assunto">Assunto</label>
+                <select name="assunto" id="assunto">
+
+                    <optgroup>
+
+                        <option selected disabled value="Selecione">Selecione</option>
+                        <option>Elogios</option>
+                        <option>Reclamações</option>
+                        <option>Sugetões</option>
+
+                    </optgroup>
+
+
+                </select>
+
+
+
+            </p>
+
+            <p>
+
+                <label for="mensagem">Deixe sua mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea>
+
+            </p>
+
+            <button type="submit" id="btnEnviar">Enviar</button>
+
+
+
+        </form>
+
+
+
+    </body>
+</hmtl>

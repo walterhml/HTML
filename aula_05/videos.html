@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Videos aula 05</title>
+    <link rel="icon" href="#">
+
+</head>
+
+<body>
+
+    <h1>Inserido música e video</h1>
+    <p>para inserir uma musica Mp3 em sua pagina web, o arquivo <b>deve</b> estar
+        em uma pasta junto com o site, no nosso caso temos a pasta midia</p>
+
+    <audio controls>
+        <source src="audio/metalica_nothing.mp3" tipe="audio/mpeg">
+    </audio>
+
+    <br>
+    <br>
+
+    <section>
+        <p>Veja os videos a seguir:</p>
+        <video controls>
+            <source src="video/london.mp4">
+            <source src="movie.ogg" type="video/ogg">
+
+
+        </video>
+    </section>
+
+    <section>
+
+        <p>Veja o video a seguir:</p>
+        <video controls>
+            <source src="video/pink-floyd.mp4">
+            <source src="movie.ogg" type="video/ogg">
+
+        </video>
+    </section>
+
+    <section>
+
+        <video controls>
+            <source src="video/pink-floyd.mp4" type="movie.ogg">
+            <source src="video/pink-floyd.mp4" type="video;ogg">
+            <source src="video/pink-floyd.mp4" type="video/webm">
+
+            <track kind="subtitles" srclang="pt-br" src="video/legenda-en.vtt.txt" label="portugues brasil" default>
+            <track kind="subtitles" srclang="pt-br" src="video/legenda-ptbr.vtt.txt" label="portugues brasil" default>
+
+        </video>
+    </section>
+
+    <p>Exite outra forma de inserir o video sem ter um arquivo,
+        por meio do youtube</p>
+
+   
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FRIu-lS0GgA" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
